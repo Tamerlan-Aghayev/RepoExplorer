@@ -16,7 +16,7 @@ import java.util.List;
 public class CodeRepositoryExplorerITest {
 
     @Autowired
-    private CodeRepositoryExplorer explorer;
+    private CodeRepositoryExplorerService explorer;
 
     @Test
     @DisplayName("Explore repositories-success")

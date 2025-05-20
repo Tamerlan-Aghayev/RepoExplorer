@@ -2,7 +2,7 @@ package com.company.repoexplorer.controller;
 
 import com.company.repoexplorer.model.ApiResponse;
 import com.company.repoexplorer.model.RepositoryInfo;
-import com.company.repoexplorer.service.CodeRepositoryExplorer;
+import com.company.repoexplorer.service.CodeRepositoryExplorerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/api/repos")
 public class RepositoryExplorerController {
-    private final CodeRepositoryExplorer explorer;
+    private final CodeRepositoryExplorerService explorer;
 
     @GetMapping("/{username}")
     public ResponseEntity<ApiResponse<List<RepositoryInfo>>> exploreRepositories(

@@ -22,7 +22,7 @@ class CodeRepositoryExplorerUTest {
     private CodeRepositoryUtility utility;
 
     @InjectMocks
-    private CodeRepositoryExplorer explorer;
+    private CodeRepositoryExplorerService explorer;
 
 
     @BeforeEach
